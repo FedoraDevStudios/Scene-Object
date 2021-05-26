@@ -1,18 +1,16 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace FedoraDev.SceneObject.Implementations
 {
-    [RequireComponent(typeof(Slider))]
-    public class LoadingBarBehaviour : MonoBehaviour
+    public class LoadingBarBehaviour : SerializedMonoBehaviour
     {
-		private Slider _slider;
+		[SerializeField] IDisplayProgress _progressDisplay;
 
-		private void Awake()
+		public void SetSliderValue(float value)
 		{
-			_slider = GetComponent<Slider>();
+			if (_progressDisplay != null)
+				_progressDisplay.Progress(value);
 		}
-
-		public void SetSliderValue(float value) => _slider.value = value;
 	}
 }
