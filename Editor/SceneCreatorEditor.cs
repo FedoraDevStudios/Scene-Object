@@ -52,6 +52,12 @@ namespace FedoraDev.SceneObject.Editor
 		[Button("Create", buttonSize: ButtonSizes.Large), GUIColor(0.5f, 1f, 0.5f), HorizontalGroup("Buttons")]
 		public void CreateScene()
 		{
+			if (string.IsNullOrWhiteSpace(SceneManager.GetActiveScene().path))
+			{
+				Debug.Log("Can't create a new scene with an untitled scene loaded.");
+				return;
+			}
+
 			string sceneFolderPath = string.Format("{0}/{1}", _sceneLocation, _sceneName);
 
 			if (AssetDatabase.IsValidFolder(sceneFolderPath))
@@ -62,11 +68,11 @@ namespace FedoraDev.SceneObject.Editor
 
 				string scenePath = string.Format("{0}/SE_{1}.unity", sceneFolderPath, _sceneName);
 				Scene newScene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Additive);
-				EditorSceneManager.SetActiveScene(newScene);
+				SceneManager.SetActiveScene(newScene);
 				if (_layout != null)
 					for (int i = 0; i < _layout.Objects.Count; i++)
-						new GameObject(string.Format(_layout.WrapperText, _layout.Objects[i]));
-				EditorSceneManager.SaveScene(newScene, scenePath);
+						_ = new GameObject(string.Format(_layout.WrapperText, _layout.Objects[i]));
+				_ = EditorSceneManager.SaveScene(newScene, scenePath);
 
 				ScriptableSceneObject newSceneObject = CreateInstance<ScriptableSceneObject>();
 				DefaultSceneObject defaultSceneObject = new DefaultSceneObject((SceneAsset)AssetDatabase.LoadAssetAtPath(scenePath, typeof(SceneAsset)));
