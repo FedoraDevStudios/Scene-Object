@@ -1,0 +1,16 @@
+{
+    "name": "_FedoraDev.SceneObject.Implementations",
+    "rootNamespace": "FedoraDev.SceneObject.Implementations",
+    "references": [
+        "GUID:c47af5c9b6ecd7b45a00e4ce2de0a873"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
