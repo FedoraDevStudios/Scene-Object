@@ -1,3 +1,14 @@
 {
-	"name": "_FedoraDev.SceneObject"
+    "name": "_FedoraDev.SceneObject",
+    "rootNamespace": "FedoraDev.SceneObject",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
