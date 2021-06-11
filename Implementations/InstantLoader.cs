@@ -19,7 +19,7 @@ namespace FedoraDev.SceneObject.Implementations
 			routineBehaviour.StartCoroutine(LoadAsync(sceneObject, routineObject));
 		}
 
-		public IEnumerator LoadAsync(ISceneObject sceneObject, GameObject routineObject)
+		public IEnumerator LoadAsync(ISceneObject sceneObject, GameObject routineObject, bool saveRoutineObject = false)
 		{
 			AsyncOperation loadingOperation;
 
@@ -56,7 +56,9 @@ namespace FedoraDev.SceneObject.Implementations
 			}
 
 			_ = SceneManager.SetActiveScene(SceneManager.GetSceneByPath(sceneObject.ScenePath));
-			Object.Destroy(routineObject);
+
+			if (!saveRoutineObject)
+				Object.Destroy(routineObject);
 		}
 	}
 }
