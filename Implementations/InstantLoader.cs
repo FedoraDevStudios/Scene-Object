@@ -18,10 +18,10 @@ namespace FedoraDev.SceneObject.Implementations
 			Object.DontDestroyOnLoad(_loaderObject);
 			RoutineBehaviour routineBehaviour = _loaderObject.AddComponent<RoutineBehaviour>();
 
-			routineBehaviour.StartCoroutine(LoadRoutine(sceneObject));
+			routineBehaviour.StartCoroutine(LoadAsync(sceneObject));
 		}
 
-		IEnumerator LoadRoutine(ISceneObject sceneObject)
+		public IEnumerator LoadAsync(ISceneObject sceneObject)
 		{
 			AsyncOperation loadingOperation;
 
