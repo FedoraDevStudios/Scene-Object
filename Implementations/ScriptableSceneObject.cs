@@ -11,7 +11,7 @@ namespace FedoraDev.SceneObject.Implementations
         public string ScenePath => _sceneObject.ScenePath;
 
 		public void SetSceneObject(ISceneObject sceneObject) => _sceneObject = sceneObject;
-        public void Load() => _sceneObject.Load();
+        public void Load(ISceneLoader sceneLoader) => _sceneObject.Load(sceneLoader);
         public T GetMetadata<T>() where T : class, ISceneMetadata => _sceneObject.GetMetadata<T>();
     }
 }

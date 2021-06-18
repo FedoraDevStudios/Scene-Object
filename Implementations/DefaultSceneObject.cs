@@ -8,7 +8,6 @@ namespace FedoraDev.SceneObject.Implementations
 	{
 		[SerializeField, HideInInspector] SceneReference _sceneReference;
 		[SerializeField, HideLabel, BoxGroup("Scene Asset")] Object _sceneAsset = null;
-		[SerializeField, HideLabel, BoxGroup("Scene Loader")] ISceneLoader _sceneLoader;
 		[SerializeField, HideLabel, BoxGroup("Metadata")] ISceneMetadata _metadata;
 
 		[ShowInInspector, ReadOnly, BoxGroup("Scene Path"), HideLabel]
@@ -35,7 +34,7 @@ namespace FedoraDev.SceneObject.Implementations
 				_sceneAsset = sceneAsset;
 		}
 
-		public void Load() => _sceneLoader.Load(this);
+		public void Load(ISceneLoader sceneLoader) => sceneLoader.Load(this);
 
 		public T GetMetadata<T>() where T : class, ISceneMetadata
 		{
