@@ -10,16 +10,7 @@ namespace FedoraDev.SceneObject.Implementations
 		[SerializeField, BoxGroup("Loading Screen")] bool _showLoadingScreen;
 		[SerializeField, ShowIf(nameof(_showLoadingScreen)), BoxGroup("Loading Screen")] ISceneObject _loadingScene;
 
-		public void Load(ISceneObject sceneObject)
-		{
-			GameObject routineObject = new GameObject("Scene Loader");
-			Object.DontDestroyOnLoad(routineObject);
-			RoutineBehaviour routineBehaviour = routineObject.AddComponent<RoutineBehaviour>();
-
-			routineBehaviour.StartCoroutine(LoadAsync(sceneObject, routineObject));
-		}
-
-		public IEnumerator LoadAsync(ISceneObject sceneObject, GameObject routineObject, bool saveRoutineObject = false)
+		public IEnumerator LoadAsync(ISceneObject sceneObject)
 		{
 			AsyncOperation loadingOperation;
 
@@ -56,9 +47,6 @@ namespace FedoraDev.SceneObject.Implementations
 			}
 
 			_ = SceneManager.SetActiveScene(SceneManager.GetSceneByPath(sceneObject.ScenePath));
-
-			if (!saveRoutineObject)
-				Object.Destroy(routineObject);
 		}
 	}
 }

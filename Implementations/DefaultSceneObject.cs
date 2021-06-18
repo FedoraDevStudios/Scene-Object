@@ -34,7 +34,7 @@ namespace FedoraDev.SceneObject.Implementations
 				_sceneAsset = sceneAsset;
 		}
 
-		public void Load(ISceneLoader sceneLoader) => sceneLoader.Load(this);
+		public IEnumerator LoadAsync(ISceneLoader sceneLoader) => sceneLoader.LoadAsync(this);
 
 		public T GetMetadata<T>() where T : class, ISceneMetadata
 		{

@@ -1,4 +1,5 @@
 using Sirenix.OdinInspector;
+using System.Collections;
 using UnityEngine;
 
 namespace FedoraDev.SceneObject.Implementations
@@ -11,7 +12,7 @@ namespace FedoraDev.SceneObject.Implementations
         public string ScenePath => _sceneObject.ScenePath;
 
 		public void SetSceneObject(ISceneObject sceneObject) => _sceneObject = sceneObject;
-        public void Load(ISceneLoader sceneLoader) => _sceneObject.Load(sceneLoader);
+        public IEnumerator LoadAsync(ISceneLoader sceneLoader) => _sceneObject.LoadAsync(sceneLoader);
         public T GetMetadata<T>() where T : class, ISceneMetadata => _sceneObject.GetMetadata<T>();
     }
 }
