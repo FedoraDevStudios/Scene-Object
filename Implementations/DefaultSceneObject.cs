@@ -1,8 +1,7 @@
 ﻿using Sirenix.OdinInspector;
-using System.Collections;
 using UnityEngine;
 
-namespace FedoraDev.SceneObject.Implementations
+namespace MochaMoth.SceneObject.Implementations
 {
 	public class DefaultSceneObject : ISceneObject, ISerializationCallbackReceiver
 	{

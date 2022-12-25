@@ -1,5 +1,8 @@
-public interface ISceneObject
+namespace MochaMoth.SceneObject
 {
-    string ScenePath { get; }
-    T GetMetadata<T>() where T : class, ISceneMetadata;
+    public interface ISceneObject
+    {
+        string ScenePath { get; }
+        T GetMetadata<T>() where T : class, ISceneMetadata;
+    }
 }

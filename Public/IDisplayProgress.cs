@@ -1,4 +1,7 @@
-public interface IDisplayProgress
+namespace MochaMoth.SceneObject
 {
-    void Progress(float progress);
+    public interface IDisplayProgress
+    {
+        void Progress(float progress);
+    }
 }

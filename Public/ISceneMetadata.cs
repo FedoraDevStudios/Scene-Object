@@ -1,4 +1,7 @@
-public interface ISceneMetadata
+namespace MochaMoth.SceneObject
 {
-    //
+    public interface ISceneMetadata
+    {
+        //
+    }
 }

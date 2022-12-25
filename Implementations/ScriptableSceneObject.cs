@@ -2,7 +2,7 @@ using Sirenix.OdinInspector;
 using System.Collections;
 using UnityEngine;
 
-namespace FedoraDev.SceneObject.Implementations
+namespace MochaMoth.SceneObject.Implementations
 {
     [CreateAssetMenu(fileName = "New Scene Object", menuName = "Scene Object/Scene Object")]
     public class ScriptableSceneObject : SerializedScriptableObject, ISceneObject

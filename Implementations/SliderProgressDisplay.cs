@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace FedoraDev.SceneObject.Implementations
+namespace MochaMoth.SceneObject.Implementations
 {
     [RequireComponent(typeof(Slider))]
     public class SliderProgressDisplay : MonoBehaviour, IDisplayProgress

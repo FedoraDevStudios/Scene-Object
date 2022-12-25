@@ -1,7 +1,7 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace FedoraDev.SceneObject.Implementations
+namespace MochaMoth.SceneObject.Implementations
 {
     public class LoadingBarBehaviour : SerializedMonoBehaviour
     {

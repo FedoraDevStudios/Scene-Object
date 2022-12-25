@@ -1,9 +1,7 @@
 {
-    "name": "_FedoraDev.SceneObject.Implementations",
-    "rootNamespace": "FedoraDev.SceneObject.Implementations",
-    "references": [
-        "GUID:c47af5c9b6ecd7b45a00e4ce2de0a873"
-    ],
+    "name": "_MochaMoth.SceneObject",
+    "rootNamespace": "MochaMoth.SceneObject",
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

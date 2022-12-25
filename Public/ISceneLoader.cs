@@ -1,7 +1,9 @@
 using System.Collections;
-using UnityEngine;
 
-public interface ISceneLoader
+namespace MochaMoth.SceneObject
 {
-    IEnumerator LoadAsync(ISceneObject sceneObject);
+    public interface ISceneLoader
+    {
+        IEnumerator LoadAsync(ISceneObject sceneObject);
+    }
 }

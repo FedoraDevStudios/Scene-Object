@@ -1,4 +1,4 @@
-﻿using FedoraDev.SceneObject.Implementations;
+﻿using MochaMoth.SceneObject.Implementations;
 using Sirenix.OdinInspector;
 using Sirenix.OdinInspector.Editor;
 using UnityEditor;
@@ -6,7 +6,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace FedoraDev.SceneObject.Editor
+namespace MochaMoth.SceneObject.Editor
 {
 	public class SceneCreator : OdinEditorWindow
 	{

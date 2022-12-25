@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-namespace FedoraDev.SceneObject.Implementations
+namespace MochaMoth.SceneObject.Implementations
 {
 	public partial class SceneReference
     {

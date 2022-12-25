@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace FedoraDev.SceneObject.Implementations
+namespace MochaMoth.SceneObject.Implementations
 {
 	[CreateAssetMenu(fileName = "", menuName = "Scene Object/Scene Layout")]
 	public class SceneLayout : ScriptableObject

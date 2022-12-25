@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace FedoraDev.SceneObject.Implementations
+namespace MochaMoth.SceneObject.Implementations
 {
     public partial class SceneReference
     {
