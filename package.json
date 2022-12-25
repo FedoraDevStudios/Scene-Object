@@ -1,12 +1,12 @@
 {
-	"name": "com.fedoradev.sceneobject",
+	"name": "com.mochamoth.sceneobject",
 	"displayName": "Scene Object",
 	"version": "3.0.0",
-	"unity": "2020.3",
-	"unityRelease": "2f1",
+	"unity": "2021.3",
+	"unityRelease": "16f1",
 	"description": "A reference management package for scene assets in Unity",
 	"author": {
-		"name": "Fedora Dev",
+		"name": "Mocha Moth",
 		"email": "fedora.game.dev@gmail.com"
 	}
 }
