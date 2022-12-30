@@ -1,13 +1,10 @@
 {
-    "name": "_MochaMoth.SceneObject.Editor",
-    "rootNamespace": "MochaMoth.SceneObject.Editor",
+    "name": "_MochaMoth.SceneObject.SceneLoaders.Implemenations",
+    "rootNamespace": "MochaMoth.SceneObject.SceneLoaders.Implemenations",
     "references": [
-        "GUID:c47af5c9b6ecd7b45a00e4ce2de0a873",
-        "GUID:f9ddf171ae447d746abe2dc66dd60bd3"
+        "GUID:c47af5c9b6ecd7b45a00e4ce2de0a873"
     ],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

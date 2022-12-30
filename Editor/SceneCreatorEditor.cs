@@ -1,4 +1,4 @@
-﻿using MochaMoth.SceneObject.Implementations;
+﻿using MochaMoth.SceneObject.SceneObjects.Implementations;
 using Sirenix.OdinInspector;
 using Sirenix.OdinInspector.Editor;
 using UnityEditor;
